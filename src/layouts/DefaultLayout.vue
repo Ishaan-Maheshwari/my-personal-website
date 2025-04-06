@@ -13,6 +13,7 @@
 </template>
 
 <script setup>
+import AppBar from '@/components/Appbar.vue';
 import Sidebar from '@/components/Sidebar.vue'
 </script>
 
