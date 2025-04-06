@@ -19,7 +19,7 @@
     </v-card>
 
     <!-- Weather Card -->
-    <v-card class="glass-card glass" width="400">
+    <!-- <v-card class="glass-card glass" width="400">
       <v-card-title class="text-h6 text-primary">🌤 Weather in Chennai</v-card-title>
       <v-card-text>
         <div v-if="weather">
@@ -29,7 +29,32 @@
         </div>
         <div v-else>Loading weather...</div>
       </v-card-text>
+    </v-card> -->
+
+    <v-card class="glass-card glass" width="400" max-width="100%">
+      <v-card-title class="text-h6 text-center text-primary font-weight-bold">
+        🌤 Weather in Chennai
+      </v-card-title>
+      <v-card-text class="pa-3">
+        <div v-if="weather" class="text-center">
+          <div class="d-flex mb-2">
+            <v-icon class="text-h5" color="primary">mdi-thermometer</v-icon>
+            <p class="ml-2 text-h6">{{ weather.temp }}°C</p>
+          </div>
+          <div class="d-flex mb-2">
+            <v-icon class="text-h5" color="primary">mdi-water-percent</v-icon>
+            <p class="ml-2 text-h6">{{ weather.humidity }}%</p>
+          </div>
+          <div class="d-flex">
+            <v-icon class="text-h5" color="primary">mdi-weather-windy</v-icon>
+            <p class="ml-2 text-h6">{{ weather.wind }} km/h</p>
+          </div>
+        </div>
+        <div v-else class="text-center">Loading weather...</div>
+      </v-card-text>
     </v-card>
+
+
 
     <!-- About Me Card -->
     <v-card class="glass glass-card" width="820">

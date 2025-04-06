@@ -16,7 +16,8 @@
         <v-list-item to="/projects" prepend-icon="mdi-folder-wrench" rounded="xl" title="tried my hands on these" />
         <v-list-item to="/gallery" prepend-icon="mdi-camera" rounded="xl" title="Some of my clicks" />
         <v-list-item to="/Playlist" prepend-icon="mdi-headphones" rounded="xl" title="I'm listening" />
-        <v-list-item to="/connect" prepend-icon="mdi-human-greeting-proximity" rounded="xl" title="Let's connect" />
+        <v-list-item to="/about" prepend-icon="mdi-human-greeting-variant" rounded="xl" title="Hey, I am ..." />
+        <v-list-item to="/connect" prepend-icon="mdi-at" rounded="xl" title="Let's connect" />
       </v-list>
     </v-navigation-drawer>
   </template>
