@@ -10,5 +10,6 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue'
 <style>
   .v-application {
     background: url('@/assets/img/homebg.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
   }
 </style>
