@@ -5,7 +5,7 @@
 
     <v-main class="main-content">
       
-      <v-container fluid class="pt-8">
+      <v-container fluid class="pt-4">
         <router-view />
       </v-container>
     </v-main>

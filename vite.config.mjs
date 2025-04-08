@@ -11,6 +11,11 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
+// ✅ Add this import
+import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
+// ✅ Needed for Buffer
+import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -69,7 +74,8 @@ export default defineConfig({
   define: { 'process.env': {} },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      buffer: 'buffer',
     },
     extensions: [
       '.js',
@@ -83,6 +89,18 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      define: {
+        global: 'globalThis',
+      },
+      plugins: [
+        NodeGlobalsPolyfillPlugin({
+          buffer: true,
+        }),
+      ],
+    },
   },
   css: {
     preprocessorOptions: {
