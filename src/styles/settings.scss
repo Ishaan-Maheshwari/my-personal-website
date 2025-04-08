@@ -6,5 +6,5 @@
 
 // https://vuetifyjs.com/features/sass-variables/`
 @use 'vuetify/settings' with (
-    $navigation-drawer-height: 60%,
+    $navigation-drawer-height: calc(100vh - 100px),
 );

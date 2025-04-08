@@ -4,7 +4,7 @@
       app
       permanent 
       rounded="xl"
-      class="glass-sidebar mx-4 my-4" 
+      class="glass-sidebar mx-4 my-4 sidebar" 
       width="250"
     >
       <!-- <v-toolbar flat title="MySite" class="text-h6 text-primary" /> -->
@@ -29,6 +29,11 @@
     -webkit-backdrop-filter: blur(16px);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 2px 0 20px rgba(255, 255, 255, 0.1);
+  }
+  .sidebar{
+    height: calc(100vh - 100px) !important;
+    overflow-y: auto;
+    scrollbar-color: #888 transparent;
   }
   </style>
   
