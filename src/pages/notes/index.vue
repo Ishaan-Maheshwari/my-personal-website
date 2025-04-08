@@ -51,9 +51,9 @@
   <script setup>
   const notesTopics = [
     {
-      title: 'Data Structures',
-      description: 'Core concepts, implementations, and cheat-sheets.',
-      link: '/notes/data-structures',
+      title: 'BPHS Notes',
+      description: "I'm making my personal notes on Brihat Parashar Hora Shashtra as I am reading it.",
+      link: '/notes/bphs',
     },
     {
       title: 'Machine Learning',
@@ -98,5 +98,14 @@
     transform: translateY(-4px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
   }
+  .glass-subtext-card {
+    background: rgba(71, 51, 51, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 0, 0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
   </style>
   

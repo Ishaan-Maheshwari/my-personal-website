@@ -65,6 +65,7 @@ export default defineConfig({
       vueTemplate: true,
     }),
   ],
+  assetsInclude: ['**/*.md'],
   define: { 'process.env': {} },
   resolve: {
     alias: {
