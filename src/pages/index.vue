@@ -18,19 +18,8 @@
       </v-card-actions>
     </v-card>
 
+    
     <!-- Weather Card -->
-    <!-- <v-card class="glass-card glass" width="400">
-      <v-card-title class="text-h6 text-primary">🌤 Weather in Chennai</v-card-title>
-      <v-card-text>
-        <div v-if="weather">
-          <p>🌡 Temp: {{ weather.temp }}°C</p>
-          <p>💧 Humidity: {{ weather.humidity }}%</p>
-          <p>🌬 Wind: {{ weather.wind }} km/h</p>
-        </div>
-        <div v-else>Loading weather...</div>
-      </v-card-text>
-    </v-card> -->
-
     <v-card class="glass-card glass" width="400" max-width="100%">
       <v-card-title class="text-h6 text-center text-primary font-weight-bold">
         🌤 Weather in Chennai
