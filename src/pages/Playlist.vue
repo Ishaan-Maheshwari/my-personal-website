@@ -8,9 +8,20 @@
         <v-col cols="8" md="6" sm="12">
         <v-card class="lyrics-card glass-card">
           <v-card-title class="text-h6 text-center lyrics-song-name">
-            <v-icon class="mr-2">mdi-music</v-icon>CO<sub>2</sub>
+            <v-icon class="mr-2">mdi-music</v-icon>Finding Her
           </v-card-title>
           <v-card-text class="lyrics-text">
+            <p class="lyric-line">Tu aata nahin</p>
+            <p class="lyric-line">Sapnon se jaata nahin</p>
+            <p class="lyric-line">Mil jaaye, kya hi baat thi</p>
+            <p class="lyric-line">Kamil ho jaata wahin</p>
+            <br/>
+            <p class="lyric-line">Jo bhi ho raaz tera</p>
+            <p class="lyric-line">Mujhko batata nahin</p>
+            <p class="lyric-line">Mil jaaye, kya hi baat thi</p>
+            <p class="lyric-line">Kamil ho jaata wahin</p>
+          </v-card-text>
+          <!-- <v-card-text class="lyrics-text">
             <p class="lyric-line">Maybe it's the silence in your eyes</p>
             <p class="lyric-line">Maybe it's the lilac when you're shy</p>
             <p class="lyric-line">Maybe it's the mystery of your love</p>
@@ -21,7 +32,7 @@
             <p class="lyric-line">Yeah, I just wanna kiss you when you're there</p>
             <p class="lyric-line">I just want you all around me, baby</p>
             <p class="lyric-line">Can we make that happen, please?</p>
-          </v-card-text>
+          </v-card-text> -->
         </v-card>
         </v-col>
       </v-row>
@@ -120,7 +131,8 @@
     data() {
       return {
         // Current Song ID (Replace with the actual track ID)
-        currentSongTrackId: '3hB9lDLyAClYVZivMMl20N',
+        // currentSongTrackId: '3hB9lDLyAClYVZivMMl20N',
+        currentSongTrackId: '5ThyDv6aRVU8AH4vXQNldF',
         
         // Recently listened songs (Replace with actual track IDs)
         recentlyListened: [
