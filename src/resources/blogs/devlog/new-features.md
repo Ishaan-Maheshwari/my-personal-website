@@ -2,7 +2,7 @@
 title: Getting Started with Vue Router
 date: 2025-04-08
 tag: Tutorial
-imageUrl: /blog-images/vue-router.png
+imageUrl: /blog-images/vue-router.jpeg
 description: Learn how to use Vue Router in your projects.
 ---
 

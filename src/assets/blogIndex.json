@@ -1,10 +1,18 @@
 [
   {
+    "tag": "Assistive Tech",
+    "slug": "vision-2047",
+    "title": "Vision 2047 for Assistive Tech",
+    "date": "2025-04-11T00:00:00.000Z",
+    "description": "Learn about the Vision 2047 for Assistive Tech.",
+    "imageUrl": "/blog-images/at.jpg"
+  },
+  {
     "tag": "devlog",
     "slug": "new-features",
     "title": "Getting Started with Vue Router",
     "date": "2025-04-08T00:00:00.000Z",
     "description": "Learn how to use Vue Router in your projects.",
-    "imageUrl": "/blog-images/vue-router.png"
+    "imageUrl": "/blog-images/vue-router.jpeg"
   }
 ]

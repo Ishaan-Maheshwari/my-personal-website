@@ -12,10 +12,10 @@
 
       <template v-else>
         <div id="blog-header" class="blog-header mb-6">
-          <v-chip color="primary" class="text-white font-weight-medium mb-2" label>
+          <v-chip color="primary" class="font-weight-medium mb-2" label>
             {{ frontmatter.tag || tagDisplay }}
           </v-chip>
-          <h1 class="text-h4 font-weight-bold text-white">
+          <h1 class="text-h4 font-weight-bold text-grey-dark-2">
             {{ frontmatter.title || titleDisplay }}
           </h1>
           <p class="text-caption text-grey-lighten-2 mt-1">
@@ -78,26 +78,27 @@ const titleDisplay = computed(() =>
 
 <style scoped>
 .glass-blog-reader {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(216, 211, 171, 0.788);
   backdrop-filter: blur(14px);
   border-radius: 16px;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #fff;
+  color: #1b1a1a;
 }
 
 .markdown-body {
-  color: #ddd;
+  color: #000000;
   line-height: 1.8;
 }
 .markdown-body h1,
 .markdown-body h2,
 .markdown-body h3 {
-  color: #fff;
+  color: #2e323d;
   margin-top: 1.5rem;
 }
 
 .blog-header h1 {
   font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: teal;
 }
 </style>

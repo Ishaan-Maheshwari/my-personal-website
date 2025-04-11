@@ -1,0 +1,41 @@
+{
+    "currentSong" : {
+      "trackId": "5ThyDv6aRVU8AH4vXQNldF",
+      "name": "Finding Her",
+      "artist": "Kushagra",
+      "lyricsLines": [
+        "Tu aata nahin",
+        "Sapnon se jaata nahin",
+        "Mil jaaye, kya hi baat thi",
+        "Kamil ho jaata wahin",
+        "...",
+        "Jo bhi ho raaz tera",
+        "Mujhko batata nahin",
+        "Mil jaaye, kya hi baat thi",
+        "Kamil ho jaata wahin"
+      ] 
+    },
+    
+    "recentlyListened": [
+      "03furKeCY0Tg0XmpzmrE0j",
+      "7mTaeqTfEbbFpeG2JqQlkf",
+      "0GDp0GGFAeStUDZKFEQjLL",
+      "1ko2lVN0vKGUl9zrU0qSlT",
+      "5snCfoQbJ7S4cYB0K8XuJ4",
+      "4nTjkWK590oBDcnIxTr1mI",
+      "2GxrNKugF82CnoRFbQfzPf",
+      "55ZJ7RQKJfeiP3DIgOebDz"
+    ],
+
+    "allTimeFavorites": [
+      "3zBnuM5Uf8k9wYaW0A3NAu",
+      "3mUkVsovIuscQlSoMhmAZt",
+      "1ZbcAMnlobqTAg2gZp3po1",
+      "5VOnTAe9SMM6RBtq0C9wmf",
+      "5O9jxRlG72h1sYxtqWwUcF",
+      "1wbeFD7ZPdXPw6HHnCVRyZ",
+      "0dLbrlAVPPjpPqnYfmJsWk",
+      "0wnLMEOQlyW3Es1ag0HMVV",
+      "5dS7HcRa9kER2qDba2iSOd"
+    ]
+}
