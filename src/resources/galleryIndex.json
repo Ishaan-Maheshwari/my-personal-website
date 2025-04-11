@@ -1,0 +1,12 @@
+{
+    "categories" : ["All", "Projects", "Events", "Nature"],
+    
+    "images" : [
+    { "id": 1, "src": "/images/gallery/project1.jpg", "category": "Projects" },
+    { "id": 2, "src": "/images/gallery/event1.jpg", "category": "Events" },
+    { "id": 3, "src": "/images/gallery/nature1.jpg", "category": "Nature" },
+    { "id": 4, "src": "/images/gallery/project2.jpg", "category": "Projects" },
+    { "id": 5, "src": "/images/gallery/event2.jpg", "category": "Events" },
+    { "id": 6, "src": "/images/gallery/nature2.jpg", "category": "Nature" }
+  ]
+}
