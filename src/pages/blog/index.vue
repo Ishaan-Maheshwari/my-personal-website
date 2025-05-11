@@ -82,7 +82,7 @@
 
           <v-card-actions class="px-4 pb-3 justify-end">
             <span class="text-caption" style="color: #aaa;">
-              {{ post.date }}
+              {{ post.date.split('T')[0] }}
             </span>
           </v-card-actions>
         </v-card>

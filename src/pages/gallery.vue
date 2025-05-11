@@ -66,7 +66,7 @@
   
       <!-- Lightbox -->
       <v-dialog v-model="previewDialog" max-width="800px">
-        <v-img :src="previewImage?.src" aspect-ratio="1.77" contain></v-img>
+        <v-img :src="previewImage?.src" contain class="preview-image"></v-img>
       </v-dialog>
     </v-container>
   </template>
@@ -125,6 +125,11 @@
   .glass-chip-active {
     background: rgba(255, 255, 255, 0.2) !important;
     font-weight: bold;
+  }
+
+  .preview-image{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
   }
   </style>
   
