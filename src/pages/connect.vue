@@ -45,11 +45,6 @@
   import { ref, onMounted } from 'vue'
   
   const connects = ref([])
-  const name = ref('')
-  const message = ref('')
-  const submitted = ref(false)
-  const loading = ref(false)
-  const error = ref(false)
   
   const goTo = (url) => {
     window.open(url, '_blank')
@@ -59,35 +54,6 @@
     const file = await import('@/resources/connects.json')
     connects.value = file.default.connects
   })
-
-  const sendMessage = async () => {
-    loading.value = true
-    submitted.value = false
-    error.value = false
-
-    try {
-        const res = await fetch('https://formspree.io/f/xgvarnwy', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            name: name.value,
-            message: message.value
-        })
-        })
-
-        if (res.ok) {
-        submitted.value = true
-        name.value = ''
-        message.value = ''
-        } else {
-        error.value = true
-        }
-    } catch (err) {
-        error.value = true
-    }
-
-    loading.value = false
-  }
 
   </script>
   

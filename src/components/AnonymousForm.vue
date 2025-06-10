@@ -7,10 +7,10 @@
                     Want to connect with me anonymously ?
                 </h2>
                 <form @submit.prevent="sendMessage">
-                    <v-text-field v-model="name" name="name" label="What's your name? (At least give me a hint 😌)"
+                    <v-text-field v-model="senderName" label="What's your name? (At least give me a hint 😌)"
                         color="white" class="white--text" variant="underlined" required></v-text-field>
 
-                    <v-textarea v-model="message" name="message" label="Yeah, so what do you want to say to me?"
+                    <v-textarea v-model="senderMessage"  label="Yeah, so what do you want to say to me?"
                         rows="5" color="white" class="white--text" variant="underlined" required></v-textarea>
 
                     <v-btn type="submit" color="cyan-lighten-3" class="mt-4" prepend-icon="mdi-send" :loading="loading"
@@ -32,11 +32,11 @@
     </v-row>
 </template>
 
-<script>
+<script setup>
   import { ref } from 'vue'
   
-  const name = ref('')
-  const message = ref('')
+  const senderName = ref(null)
+  const senderMessage = ref(null)
   const submitted = ref(false)
   const loading = ref(false)
   const error = ref(false)
@@ -55,15 +55,15 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            name: name.value,
-            message: message.value
+            name: senderName.value,
+            message: senderMessage.value
         })
         })
 
         if (res.ok) {
         submitted.value = true
-        name.value = ''
-        message.value = ''
+        senderName.value = ''
+        senderMessage.value = ''
         } else {
         error.value = true
         }
