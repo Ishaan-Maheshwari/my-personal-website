@@ -28,10 +28,10 @@
         </div>
 
         <p v-if="item.reflection" class="reflection">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <span class="reflection-label">Reflection</span>
+          <a class="reflection-link" v-if="item.reflectionIsLink" :href=item.reflection target="_blank" rel="noopener noreferrer">
+            <span class="reflection-label">{{ item.reflection }}</span>
           </a>
-          {{ item.reflection }}
+          <span v-else>{{ item.reflection }}</span>
         </p>
       </div>
     </div>
@@ -101,6 +101,12 @@ defineProps({
   background: #7dd3fc;
   opacity: 0.6;
   animation: pulse 1.8s infinite ease-in-out;
+}
+
+.reflection-link {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: #7dd3fc 0 0 2px;
 }
 
 @keyframes pulse {

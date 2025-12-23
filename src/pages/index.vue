@@ -16,7 +16,8 @@
             secondary:
               'KALYANI is a whole mood. RONN, ARJN, FIFTY4, and KDS came together to create this vibe-heavy track that I can\'t stop playing on repeat.',
             image: 'images/homepage/curr_obss.jpg',
-            reflection: '🔗 https://music.youtube.com/watch?v=TijBIPD4Jbw'
+            reflection: 'https://music.youtube.com/watch?v=TijBIPD4Jbw',
+            reflectionIsLink: true
           }
         ]"
         meta="updated this morning"
@@ -99,13 +100,23 @@
     <!-- About Me Card - Full Width -->
     <div class="card-wrapper full-width">
       <v-card class="glass glass-card">
-        <v-card-title class="text-h6 text-primary">Oh, I forgot to introduce myself</v-card-title>
+        <v-card-title class="text-h6 text-primary">Oh, I forgot to introduce myself. Hi, I'm Ishaan</v-card-title>
         <v-card-text>
           <p>
-            Hi! I'm <strong>Ishaan</strong>, a student trying to build cool stuff in the e-learning and assistive tech space. 
-            Passionate about tech, design, and meaningful innovation 🚀.
+          This is my corner of the internet.
+          I build projects, write notes to myself, take photos of small moments, and keep track of what I'm listening to lately. I'm especially interested in assistive technology, thoughtful design, and systems that feel human rather than impressive.
+          Some things here are polished. Some aren't. That's intentional.
           </p>
         </v-card-text>
+        <v-card-footer>
+          <v-btn
+            color="primary"
+            href="/about"
+            variant="text"
+          >
+            Feel free to wander.
+          </v-btn>
+        </v-card-footer>
       </v-card>
     </div>
   </div>
