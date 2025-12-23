@@ -9,7 +9,7 @@
     <!-- Dad Joke & Weather Cards - Two Column -->
     <div class="cards-row">
       <div class="card-wrapper">
-        <v-card class="glass glass-card h-100">
+        <v-card class="glass glass-card">
           <v-card-title class="text-h6 text-primary">LOL, read this one ...</v-card-title>
           <v-card-text class="text-body-1">
             <div v-if="joke">{{ joke }}</div>
@@ -24,7 +24,7 @@
       </div>
 
       <div class="card-wrapper">
-        <v-card class="glass glass-card h-100">
+        <v-card class="glass glass-card">
           <v-card-title class="text-h6 text-center text-primary font-weight-bold">
             🌤 Weather in Chennai
           </v-card-title>
@@ -51,7 +51,7 @@
 
     <!-- About Me Card - Full Width -->
     <div class="card-wrapper full-width">
-      <v-card class="glass glass-card h-100">
+      <v-card class="glass glass-card">
         <v-card-title class="text-h6 text-primary">Oh, I forgot to introduce myself</v-card-title>
         <v-card-text>
           <p>
@@ -135,11 +135,6 @@ onMounted(() => {
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1rem;
-  height: 100%;
-}
-
-.h-100 {
-  height: 100%;
 }
 
 /* Mobile - Single Column */

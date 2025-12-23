@@ -1,6 +1,6 @@
 <!-- src/components/QuoteCard.vue -->
 <template>
-    <v-card class="glass-quote-card pa-0" width="820" height="200">
+    <v-card class="glass-quote-card pa-0" height="200">
       <v-img
         src="https://api.viewbits.com/v1/zenquotes?mode=image"
         alt="Inspirational Quote"
