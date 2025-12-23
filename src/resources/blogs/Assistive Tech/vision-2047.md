@@ -4,6 +4,8 @@ date: 2025-04-11
 tag: Article
 imageUrl: /blog-images/at.jpg
 description: Learn about the Vision 2047 for Assistive Tech.
+backgroundImage: /images/blog-backgrounds/grunge-paper.jpg
+isProtected: false
 ---
 
 # Vision 2047 for Assistive Technology in India

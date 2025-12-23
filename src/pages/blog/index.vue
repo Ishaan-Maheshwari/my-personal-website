@@ -9,7 +9,7 @@
       label="Search posts..."
       variant="solo-filled"
       hide-details
-      class="mb-6 glass-search"
+      class="mb-6 glass-search "
     />
 
     <!-- 🏷️ Tag Filters -->

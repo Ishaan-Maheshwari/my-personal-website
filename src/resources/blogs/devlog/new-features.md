@@ -4,6 +4,8 @@ date: 2025-04-08
 tag: Tutorial
 imageUrl: /blog-images/vue-router.jpeg
 description: Learn how to use Vue Router in your projects.
+backgroundImage: /images/blog-backgrounds/fangel.jpg
+isProtected: false
 ---
 
 # What's New in My Portfolio?
