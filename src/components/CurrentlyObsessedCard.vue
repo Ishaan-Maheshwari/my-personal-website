@@ -22,12 +22,15 @@
             <p class="primary">“{{ item.primary }}”</p>
 
             <p v-if="item.secondary" class="secondary">
-              — {{ item.secondary }}
+              {{ item.secondary }}
             </p>
           </div>
         </div>
 
         <p v-if="item.reflection" class="reflection">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <span class="reflection-label">Reflection</span>
+          </a>
           {{ item.reflection }}
         </p>
       </div>

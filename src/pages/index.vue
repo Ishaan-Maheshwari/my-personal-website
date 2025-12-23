@@ -2,33 +2,56 @@
 <template>
   <div class="home-container">
     <!-- Quote Card - Full Width -->
-    <div class="card-wrapper full-width">
+    <!-- <div class="card-wrapper full-width">
       <QuoteCard />
-    </div>
+    </div> -->
 
     <!-- Dad Joke & Weather Cards - Two Column -->
     <div class="cards-row">
-      <div class="card-wrapper">
-        <v-card class="glass glass-card">
-          <v-card-title class="text-h6 text-primary">LOL, read this one ...</v-card-title>
-          <v-card-text class="text-body-1">
-            <div v-if="joke">{{ joke }}</div>
-            <div v-else>Loading a hilarious joke...</div>
-          </v-card-text>
-          <v-card-actions>
-            <v-btn color="primary" prepend-icon="mdi-emoticon-lol-outline" @click="fetchJoke" variant="text">
-              One more
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </div>
 
-      <div class="card-wrapper">
+      <CurrentlyObsessedCard
+        :items="[
+          {
+            primary: 'KALYANI',
+            secondary:
+              'KALYANI is a whole mood. RONN, ARJN, FIFTY4, and KDS came together to create this vibe-heavy track that I can\'t stop playing on repeat.',
+            image: 'images/homepage/curr_obss.jpg',
+            reflection: '🔗 https://music.youtube.com/watch?v=TijBIPD4Jbw'
+          }
+        ]"
+        meta="updated this morning"
+      />
+
+      <ActiveProjectCard
+        title="Ambient Thoughts"
+        tagline="A soft corner of the internet"
+        description="A tiny experiment where thoughts appear, fade, and never ask for attention."
+        image="https://imgix.bustle.com/inverse/d5/68/71/d8/35ab/4e9c/9acb/803bdee5ecd2/martin-starr-as-gilfoyle-in-hbos-silicon-valley.jpeg"
+        :tags="['fun', 'web', 'glassmorphism']"
+        status="tinkering"
+        updated="touched yesterday"
+        link="/projects/ambient-thoughts"
+      />
+
+    </div>
+
+    
+      <ThreeCardLayout>
+        <template v-slot:left>
+          <ShotOfTheWeekCard
+        image="/images/sow.jpg"
+        caption="Light falling in ways it usually doesn’t."
+        meta="Evening · Chennai"
+        week="week 32"
+      />
+        </template>
+        <template v-slot:top-right>
+          <div class="card-wrapper">
         <v-card class="glass glass-card">
           <v-card-title class="text-h6 text-center text-primary font-weight-bold">
             🌤 Weather in Chennai
           </v-card-title>
-          <v-card-text class="pa-3">
+          <v-card-text>
             <div v-if="weather" class="text-center">
               <div class="d-flex mb-2 align-center justify-center">
                 <v-icon class="text-h5" color="primary">mdi-thermometer</v-icon>
@@ -47,7 +70,31 @@
           </v-card-text>
         </v-card>
       </div>
-    </div>
+
+      <!-- joke card starts here-->
+       <br></br>
+       <div class="card-wrapper">
+            <v-card class="glass glass-card">
+              <v-card-title class="text-h6 text-primary">LOL, read this one ...</v-card-title>
+              <v-card-text class="text-body-1">
+                <div v-if="joke">{{ joke }}</div>
+                <div v-else>Loading a hilarious joke...</div>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn color="primary" prepend-icon="mdi-emoticon-lol-outline" @click="fetchJoke" variant="text">
+                  One more
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </div>
+       <!-- joke card ends here -->
+        </template>
+        <template v-slot:bottom-right>
+          
+        </template>
+      </ThreeCardLayout>
+      
+    
 
     <!-- About Me Card - Full Width -->
     <div class="card-wrapper full-width">
@@ -67,6 +114,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
+import CurrentlyObsessedCard from '@/components/CurrentlyObsessedCard.vue'
+import ActiveProjectCard from '@/components/ActiveProjectCard.vue'
+import ThreeCardLayout from '@/layouts/ThreeCardLayout.vue'
 
 const joke = ref('')
 const weather = ref(null)
