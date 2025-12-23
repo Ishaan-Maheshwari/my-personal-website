@@ -6,7 +6,7 @@
 
 // https://vuetifyjs.com/features/sass-variables/`
 @use 'vuetify/settings' with (
-    $navigation-drawer-height: calc(100vh - 100px),
+    // $navigation-drawer-height: calc(100vh - 100px),
     $overlay-scrim-background: black,
     $overlay-opacity: 0.8
 );
