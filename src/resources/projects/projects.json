@@ -1,0 +1,117 @@
+{
+  "projects": [
+    {
+      "id": "dyslexia-screening",
+      "title": "Handwriting-based Dyslexia Screening",
+      "shortDescription": "Screens dyslexia indicators by analyzing handwriting patterns using computer vision.",
+      "category": ["assistive-tech", "machine-learning", "computer-vision", "healthcare"],
+      "status": "active",
+      "difficulty": "advanced",
+      "techStack": ["Python", "PyTorch", "OpenCV"],
+      "tags": ["screening", "low-resource"],
+      "featured": true,
+      "thumbnail": "/images/projects/default_project_thumb.png",
+      "lastUpdated": "2025-08",
+      "links": {
+        "detail": "/projects/dyslexia-screening",
+        "github": null,
+        "demo": null
+      }
+    },
+
+    {
+      "id": "speech-therapy-visual-ai",
+      "title": "Visual Speech Therapy System",
+      "shortDescription": "Visual-first speech therapy for dysarthric and hearing-impaired users without auditory feedback.",
+      "category": ["assistive-tech", "ai", "healthcare"],
+      "status": "active",
+      "difficulty": "advanced",
+      "techStack": ["Flutter", "Python", "PyTorch"],
+      "tags": ["accessibility", "multimodal"],
+      "featured": true,
+      "thumbnail": "/images/projects/default_project_thumb.png",
+      "lastUpdated": "2025-07",
+      "links": {
+        "detail": "/projects/speech-therapy",
+        "github": null,
+        "demo": null
+      }
+    },
+
+    {
+      "id": "humanoid-conversational-ai",
+      "title": "Humanoid Robot Conversational AI",
+      "shortDescription": "Emotion-aware conversational AI subsystem for a humanoid robot companion.",
+      "category": ["robotics", "ai", "systems"],
+      "status": "research",
+      "difficulty": "advanced",
+      "techStack": ["Python", "NLP", "TTS", "STT"],
+      "tags": ["emotion-detection", "human-robot-interaction"],
+      "featured": true,
+      "thumbnail": "/images/projects/default_project_thumb.png",
+      "lastUpdated": "2025-06",
+      "links": {
+        "detail": "/projects/humanoid-conversational-ai",
+        "github": null,
+        "demo": null
+      }
+    },
+
+    {
+      "id": "inaturalist-cnn",
+      "title": "iNaturalist CNN Image Classifier",
+      "shortDescription": "Custom CNN architecture trained on a subset of the iNaturalist dataset.",
+      "category": ["machine-learning", "computer-vision", "research"],
+      "status": "completed",
+      "difficulty": "intermediate",
+      "techStack": ["Python", "PyTorch", "WandB"],
+      "tags": ["classification", "experimentation"],
+      "featured": false,
+      "thumbnail": "/images/projects/default_project_thumb.png",
+      "lastUpdated": "2025-04",
+      "links": {
+        "detail": "/projects/inaturalist-cnn",
+        "github": "https://github.com/yourname/inaturalist-cnn",
+        "demo": null
+      }
+    },
+
+    {
+      "id": "attendance-tracker-dashboard",
+      "title": "Role-based Attendance Tracking Dashboard",
+      "shortDescription": "Vue + Flask based attendance tracking system with live analytics and role-based access.",
+      "category": ["web", "systems"],
+      "status": "completed",
+      "difficulty": "intermediate",
+      "techStack": ["Vue", "Vuetify", "Flask", "MySQL"],
+      "tags": ["dashboard", "rbac"],
+      "featured": false,
+      "thumbnail": "/images/projects/default_project_thumb.png",
+      "lastUpdated": "2025-03",
+      "links": {
+        "detail": "/projects/attendance-tracker",
+        "github": null,
+        "demo": null
+      }
+    },
+
+    {
+      "id": "portfolio-website",
+      "title": "Personal Portfolio Website",
+      "shortDescription": "Minimal, component-driven portfolio showcasing projects, research, and experiments.",
+      "category": ["web"],
+      "status": "active",
+      "difficulty": "beginner",
+      "techStack": ["Vue", "CSS"],
+      "tags": ["design", "frontend"],
+      "featured": false,
+      "thumbnail": "/images/projects/default_project_thumb.png",
+      "lastUpdated": "2025-08",
+      "links": {
+        "detail": "/projects/portfolio",
+        "github": null,
+        "demo": null
+      }
+    }
+  ]
+}
