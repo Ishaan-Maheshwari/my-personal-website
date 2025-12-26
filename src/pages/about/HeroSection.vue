@@ -1,11 +1,11 @@
 <template>
   <section class="hero">
-    <h1 class="hero-line">
-      I build technology that <span>listens</span>.
-    </h1>
-
-    <p class="hero-sub">
-      I’m Ishaan — an engineer working at the intersection of AI,
+    <h1 class="reveal">I’m Ishaan.</h1>
+    <h2 class="reveal delay-1">
+      I build technology that tries to understand people before optimizing for them.
+    </h2>
+    <p class="reveal delay-2">
+      I’m an engineer working at the intersection of artificial intelligence,
       assistive technology, and human-centered design.
     </p>
   </section>
@@ -55,5 +55,21 @@ export default { name: 'HeroSection' }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

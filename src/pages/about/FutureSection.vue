@@ -1,9 +1,8 @@
 <template>
-  <section class="future">
+  <section ref="section" class="section future" :class="{ visible }">
     <p>
-      Right now, I’m exploring multimodal AI,
-      conversational agents, and perception systems
-      for assistive and humanoid robotics.
+      I’m currently exploring multimodal AI, conversational agents,
+      and perception systems for assistive and humanoid robotics.
     </p>
 
     <p class="closing">
@@ -15,19 +14,38 @@
 </template>
 
 <script>
-export default { name: 'FutureSection' }
+export default {
+  name: 'FutureSection',
+  data: () => ({ visible: false }),
+  mounted() {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) this.visible = true
+      },
+      { threshold: 0.2 }
+    )
+    observer.observe(this.$refs.section)
+  }
+}
 </script>
 
 <style scoped>
 .future {
-  margin: 10rem auto 6rem;
-  max-width: 600px;
   text-align: center;
 }
 
 .closing {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-style: italic;
   opacity: 0.6;
+}
+
+.section {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.section.visible {
+  opacity: 1;
 }
 </style>

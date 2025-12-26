@@ -1,12 +1,12 @@
 <template>
-  <section ref="section" class="philosophy" :class="{ visible }">
+  <section ref="section" class="section" :class="{ visible }">
+    <h3>Philosophy</h3>
     <p>
       I build for people who are often overlooked by default design assumptions —
       children, the elderly, and individuals with speech or sensory impairments.
     </p>
-
-    <p class="soft">
-      Good technology should feel calm, forgiving,
+    <p>
+      I believe good technology should feel calm, forgiving,
       and quietly supportive.
     </p>
   </section>
@@ -45,5 +45,16 @@ export default {
   margin-top: 1.5rem;
   font-style: italic;
   opacity: 0.7;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.7s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
